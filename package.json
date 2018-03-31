@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "nodemailer": "^4.6.3",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "smtp-server": "^3.4.2"
+  }
+}
