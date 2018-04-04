@@ -12,7 +12,7 @@ var transporter = nodemailer.createTransport(smtpTransport({
   host: 'smtp.gmail.com',
   auth: {
     user: 'ss4u.team.node@gmail.com',
-    pass: 'Marchend'
+    pass: 'Team Node Rocks7'
   }
 }));
 app.use(bodyparser.json());
@@ -32,18 +32,19 @@ app.post("/email",function(req,res)
         if (err) 
           {
             console.log(err);
-              console.log(req.body);
+            console.log(req.body);
             res.statuscode = 200;
             res.write(err);
             res.end();
-          } else
-          {
-              console.log(req.body);
+          } 
+       
+            console.log(req.body);
             res.statuscode = 200;
             res.write("hello");
             res.end();
             console.log('Email sent: ' + info.response);
-          }                  
+                  
+            transporter.close();
 });
 });
 app.listen(port);
