@@ -11,8 +11,8 @@ var transporter = nodemailer.createTransport(smtpTransport({
   service: 'gmail',
   host: 'smtp.gmail.com',
   auth: {
-    user: 'ss4u.team.node@gmail.com',
-    pass: 'Team Node Rocks7'
+    user: '',
+    pass: ''
   }
 }));
 app.use(bodyparser.json());
